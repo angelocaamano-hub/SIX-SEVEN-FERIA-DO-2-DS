@@ -1,0 +1,123 @@
+/* --- Estilo Profissional Clean Tech --- */
+
+/* Reset básico e tipografia moderna */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Fundo da página centralizado e suave */
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container principal do Quiz */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 600px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 
+                0 8px 10px -6px rgba(0, 0, 0, 0.05);
+}
+
+/* Título principal */
+h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #0f172a;
+}
+
+/* Bloco da pergunta (Ex: class="pergunta 1") */
+[class^="pergunta"] {
+    background-color: #ffffff;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+/* Texto da pergunta (o parágrafo com o número) */
+[class^="pergunta"] p {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #1e293b;
+}
+
+/* As opções de resposta (labels) transformadas em botões largos */
+[class^="pergunta"] label {
+    display: flex;
+    align-items: center;
+    background-color: #f1f5f9;
+    border: 2px solid #e2e8f0;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Efeito de passar o mouse por cima da opção */
+[class^="pergunta"] label:hover {
+    border-color: #4f46e5;
+    background-color: #f5f3ff;
+}
+
+/* Estilização moderna e customizada do botão de rádio circular */
+[class^="pergunta"] input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #94a3b8;
+    border-radius: 50%;
+    margin-right: 12px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    background-color: #ffffff;
+}
+
+/* Quando a opção é selecionada (marcada) */
+[class^="pergunta"] input[type="radio"]:checked {
+    border-color: #4f46e5;
+    background-color: #4f46e5;
+    box-shadow: inset 0 0 0 4px #ffffff; /* Cria o círculo interno branco */
+}
+
+/* Destaca o card inteiro da resposta quando ela é selecionada */
+[class^="pergunta"] label:has(input[type="radio"]:checked) {
+    border-color: #4f46e5;
+    background-color: #eef2ff;
+    color: #4f46e5;
+}
+
+
+
+[class*="pergunta"] label {
+    display: flex;
+    align-items: center;
+    background-color: #f1f5f9;
+    border: 2px solid #e2e8f0;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+}
