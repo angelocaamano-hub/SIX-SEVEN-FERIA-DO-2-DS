@@ -106,7 +106,7 @@
                     <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700/50">
                         <i class="fa-solid fa-list-check text-blue-400 mb-2"></i>
                         <h4 class="font-semibold text-white text-sm">7 Questões</h4>
-                        <p class="text-xs text-slate-400 mt-1">Nível de Júnior a Pleno</p>
+                        <p class="text-xs text-slate-400 mt-1">Nível facil a medio</p>
                     </div>
                     <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-700/50">
                         <i class="fa-solid fa-stopwatch text-purple-400 mb-2"></i>
@@ -168,7 +168,7 @@
                     <i class="fa-solid fa-chevron-left mr-2"></i> Anterior
                 </button>
                 <button id="btn-next" onclick="quizApp.nextQuestion()" class="px-6 py-2.5 bg-blue-600 hover:bg-blue-500 text-white font-medium rounded-xl shadow-md shadow-blue-600/20 transition flex items-center">
-                    <span id="btn-next-text">Próxima</span> <i class="fa-solid fa-chevron-right ml-2"></i>
+                    <span id="btn-next-text">Próxima Pergunta</span> <i class="fa-solid fa-chevron-right ml-2"></i>
                 </button>
             </div>
         </div>
@@ -248,87 +248,87 @@
         const questionsData = [
             {
                 id: 1,
-                category: "Desenvolvimento Web",
-                question: "Qual das alternativas a seguir descreve corretamente o papel do JavaScript no desenvolvimento de sistemas web?",
+                category: "Desenvolvimento de Sistemas",
+                question: "Para que serve o curso de Desenvolvimento de Sistemas?",
                 options: [
-                    { key: "A", text: "Linguagem exclusiva de estilização e diagramação de páginas." },
-                    { key: "B", text: "Linguagem de programação para adicionar interatividade e dinamismo ao lado do cliente (e servidor via Node.js)." },
-                    { key: "C", text: "SGBD responsável pela persistência de dados relacionais na nuvem." }
+                    { key: "A", text: "Para criar hospitais e hoteis." },
+                    { key: "B", text: "Para aprender a jogar algum esporte." },
+                    { key: "C", text: "Para aprender a criar paginas web e aplicativos." }
                 ],
-                correct: "B",
-                explanation: "O JavaScript é uma linguagem de programação interpretada de alto nível que adiciona comportamentos dinâmicos ao front-end e também roda no back-end utilizando ambientes como o Node.js."
+                correct: "C",
+                explanation: "O Desenvolvimento de sistemas serve para aprender a criar sites, aplicativos, jogos e soluções para o futuro."
             },
             {
                 id: 2,
-                category: "Banco de Dados",
-                question: "Qual é a principal diferença estrutural entre um Banco de Dados Relacional (SQL) e um Não Relacional (NoSQL)?",
+                category: "Linguagens de programação",
+                question: "Quais são as linguagens de programação que saõ usadas no curso de Desenvolvimento de Sistemas?",
                 options: [
-                    { key: "A", text: "SQL armazena dados em tabelas com esquemas rígidos e chave primária/estrangeira; NoSQL utiliza modelos flexíveis como documentos (JSON) ou pares chave-valor." },
-                    { key: "B", text: "Bancos NoSQL não suportam consultas complexas e são usados apenas para arquivos temporários de texto." },
-                    { key: "C", text: "Bancos SQL funcionam apenas no lado do cliente e não exigem servidor dedicado." }
+                    { key: "A", text: "Usamos linguagens de programação como: HTML, STYLE.CSS, JAVASCRIPT E PYTHON." },
+                    { key: "B", text: "Usamos linguagens como back-end, google, chatgpt e Gemini." },
+                    { key: "C", text: "Chatgpt, classroom, gemini, historia e matematica." }
                 ],
                 correct: "A",
-                explanation: "Bancos SQL utilizam tabelas e esquemas definidos com forte integridade relacional, enquanto bancos NoSQL permitem esquemas dinâmicos e escalabilidade horizontal facilitada para modelos não estruturados."
+                explanation: "As linguagens são importantes para criar uma pagina porque assim o site tem vida."
             },
             {
                 id: 3,
-                category: "Orientação a Objetos",
-                question: "Em Programação Orientada a Objetos (POO), o conceito de 'Encapsulamento' refere-se a:",
+                category: "Desnvolvedor dia a dia",
+                question: "Uma grande vantagem de trabalhar como desenvolvedor de sistemas é:",
                 options: [
-                    { key: "A", text: "A capacidade de uma classe herdar métodos e atributos diretos de outra classe pai." },
-                    { key: "B", text: "Proteger os atributos internos de uma classe, restringindo o acesso direto e disponibilizando métodos (getters/setters) para manipulação." },
-                    { key: "C", text: "Reescrever o mesmo método para agir de formas diferentes dependendo do contexto de execução." }
+                    { key: "A", text: "Ter a possibilidade de trabalhar de forma remota (de casa ou de qualquer lugar do mundo)." },
+                    { key: "B", text: "Ser proibido de usar a internet durante a rotina de trabalho.." },
+                    { key: "C", text: "Ter que trabalhar obrigatoriamente aos domingos e feriados sem folga.." }
                 ],
-                correct: "B",
-                explanation: "O Encapsulamento esconde o estado interno dos objetos e exige que todas as interações sejam feitas através de interfaces públicas bem definidas, aumentando a segurança e manutenção da aplicação."
+                correct: "A",
+                explanation: "Ter a possibilidade de criar coisas em casa é muito bom para você."
             },
             {
                 id: 4,
-                category: "Controle de Versão",
-                question: "Qual o comando Git utilizado para criar um novo ramo (branch) de trabalho local e mudar diretamente para ele?",
+                category: "Atitude de um tecnico de TI",
+                question: "Qual é uma atitude muito importante para quem quer se destacar na área de TI?",
                 options: [
-                    { key: "A", text: "git push origin main" },
-                    { key: "B", text: "git checkout -b nome-da-branch" },
-                    { key: "C", text: "git commit -m 'nova branch'" }
+                    { key: "A", text: "Evitar estudar novidades e usar apenas tecnologias criadas nos anos 1990." },
+                    { key: "B", text: "Ter curiosidade, vontade de aprender coisas novas e gostar de resolver problemas." },
+                    { key: "C", text: "Recusar-se a tirar dúvidas com professores e colegas de turma." }
                 ],
                 correct: "B",
-                explanation: "O comando 'git checkout -b <nome>' cria uma nova branch no repositório e altera o ponteiro do HEAD imediatamente para ela. Nas versões recentes do Git, 'git switch -c <nome>' também realiza esta ação."
+                explanation: "Ter atitude para e vontade criar ajuda a ter mais criatividade para as coisas."
             },
             {
                 id: 5,
-                category: "Arquitetura e APIs",
-                question: "Em uma arquitetura de API RESTful, qual método HTTP deve ser utilizado prioritariamente para ATUALIZAR recursos existentes de forma idempotente?",
+                category: "Area de trabalho",
+                question: "Qual é uma das maiores vantagens de trabalhar na área de Tecnologia da Informação (TI)?s",
                 options: [
-                    { key: "A", text: "GET" },
-                    { key: "B", text: "POST" },
-                    { key: "C", text: "PUT" }
+                    { key: "A", text: "Trabalhar em uma profissão que está desaparecendo do mercado" },
+                    { key: "B", text: "Ser obrigado a trabalhar sem receber férias ou folgas" },
+                    { key: "C", text: "Ter muitas vagas abertas no mercado e oportunidade de salários valorizados" }
                 ],
                 correct: "C",
-                explanation: "O método HTTP PUT é utilizado para substituir/atualizar inteiramente um recurso existente no servidor de maneira idempotente (múltiplas requisições idênticas produzem o mesmo resultado)."
+                explanation: "A vantagem de ser desenvolvedor é que vai ter uma vida resolvida e boa."
             },
             {
                 id: 6,
-                category: "Qualidade e Testes",
-                question: "O que caracteriza os chamados 'Testes Unitários' (ou de Unidade) na engenharia de software?",
+                category: "Para quem é recomendado",
+                question: "Para quem é recomendado o curso de Desenvolvimento de Sistemas?",
                 options: [
-                    { key: "A", text: "Testar módulos isolados, funções ou métodos individuais do código sem dependências externas reais." },
-                    { key: "B", text: "Simular o fluxo completo do usuário final no navegador usando Selenium ou Cypress." },
-                    { key: "C", text: "Verificar a velocidade do banco de dados ao receber 10.000 requisições simultâneas." }
+                    { key: "A", text: "Para qualquer pessoa curiosa, de qualquer idade, que queira construir um futuro com mais oportunidades." },
+                    { key: "B", text: "Apenas para pessoas que já nasceram sabendo tudo sobre computadores." },
+                    { key: "C", text: "Exclusivamente para quem já trabalha na área há mais de 10 anos." }
                 ],
                 correct: "A",
-                explanation: "Testes unitários verificam o funcionamento correto da menor unidade testável de um código (geralmente uma função ou classe isolada), utilizando dublês de teste (mocks) para isolar dependências."
+                explanation: "não importa que for as pessoas o importante é querer fazer."
             },
             {
                 id: 7,
-                category: "Metodologias Ágeis",
-                question: "No framework Scrum, qual evento tem o objetivo principal de inspecionar o trabalho realizado no ciclo e adaptar os próximos processos do time?",
+                category: "Porque aprender",
+                question: "Por que aprender a criar sistemas ajuda no seu crescimento pessoal?",
                 options: [
-                    { key: "A", text: "Daily Scrum (Reunião Diária)" },
-                    { key: "B", text: "Sprint Retrospective (Retrospectiva da Sprint)" },
-                    { key: "C", text: "Backlog Grooming (Refinamento)" }
+                    { key: "A", text: "Porque obriga você a decorar livros inteiros sem entender nada." },
+                    { key: "B", text: "Porque ensina sua mente a pensar com lógica, organizar ideias e resolver problemas do dia a dia mais rápido" },
+                    { key: "C", text: "Porque impede você de se comunicar com outras pessoas" }
                 ],
                 correct: "B",
-                explanation: "A Retrospectiva da Sprint ocorre no final de cada ciclo para que o time avalie como foi a Sprint em relação a pessoas, relacionamentos, processos e ferramentas, identificando melhorias para as próximas etapas."
+                explanation: "Ajuda a ter uma criatividade muito grande para você programar."
             }
         ];
 
